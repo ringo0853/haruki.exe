@@ -63,6 +63,51 @@
  display: none;
 }
 /***ステップバーデザイン3***/
+/***ステップバー***/
+.stepBar {
+  display: flex;
+  max-width: 400px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+.stepBar li {
+  font-size: 12px;
+  list-style: none;
+  position: relative;
+  width: 33.333%;
+}
+.stepBar li:after {
+  background: #759bcc;
+  content: "";
+  width: calc(100% - 24px);
+  height: 4px;
+  position: absolute;
+  left: calc(-50% + 12px);
+  top: 10px;
+}
+.stepBar li:first-child:after {
+  display: none;
+}
+.stepBar li span {
+  background: #759bcc;
+  color: #000000;
+  display: inline-block;
+  height: 24px;
+  margin-bottom: 5px;
+  line-height: 24px;
+  width: 24px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.stepBar .visited:after {
+  background: #cce5ff;
+}
+.stepBar .visited span {
+  background: #cce5ff;
+}
+/***ステップバー***/
 </style>
 <head>
     <meta charset="utf-8">
@@ -95,8 +140,14 @@
         <div class="step-label3">STEP</div>
         <div class="step-title3">結果</div>
             <div class="step-body3">本文</div>
-        </div>
+      　</div>
     </div>
+    <ol class="stepBar">
+        <li class="visited"><span>1</span><br>説明</li>
+        <li><span>2</span><br>入力</li>
+        <li><span>3</span><br>変更</li>
+        <li><span>4</span><br>結果</li>
+    </ol>
 </body>
 <script type="text/javascript" src="sekigae.js">
   
