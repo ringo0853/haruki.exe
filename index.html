@@ -1,5 +1,50 @@
 <html lang="ja">
 <style>
+/***ステップバー***/
+.stepBar {
+  display: flex;
+  max-width: 400px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+.stepBar li {
+  font-size: 12px;
+  list-style: none;
+  position: relative;
+  width: 33.333%;
+}
+.stepBar li:after {
+  background: #cce5ff;
+  content: "";
+  width: calc(100% - 24px);
+  height: 4px;
+  position: absolute;
+  left: calc(-50% + 12px);
+  top: 10px;
+}
+.stepBar li:first-child:after {
+  display: none;
+}
+.stepBar li span {
+  background: #cce5ff;
+  color: #000000;
+  display: inline-block;
+  height: 24px;
+  margin-bottom: 5px;
+  line-height: 24px;
+  width: 24px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.stepBar .visited:after {
+  background: #759bcc;
+}
+.stepBar .visited span {
+  background: #759bcc;
+}
+/***ステップバー***/
 /***ステップバーデザイン3***/
 .step-wrap3 {
  counter-reset: count;
@@ -63,51 +108,6 @@
  display: none;
 }
 /***ステップバーデザイン3***/
-/***ステップバー***/
-.stepBar {
-  display: flex;
-  max-width: 400px;
-  position: relative;
-  margin: 20px auto;
-  text-align: center;
-}
-.stepBar li {
-  font-size: 12px;
-  list-style: none;
-  position: relative;
-  width: 33.333%;
-}
-.stepBar li:after {
-  background: #759bcc;
-  content: "";
-  width: calc(100% - 24px);
-  height: 4px;
-  position: absolute;
-  left: calc(-50% + 12px);
-  top: 10px;
-}
-.stepBar li:first-child:after {
-  display: none;
-}
-.stepBar li span {
-  background: #759bcc;
-  color: #000000;
-  display: inline-block;
-  height: 24px;
-  margin-bottom: 5px;
-  line-height: 24px;
-  width: 24px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-.stepBar .visited:after {
-  background: #cce5ff;
-}
-.stepBar .visited span {
-  background: #cce5ff;
-}
-/***ステップバー***/
 </style>
 <head>
     <meta charset="utf-8">
