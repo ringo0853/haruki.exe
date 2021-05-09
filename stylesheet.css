@@ -1,1 +1,51 @@
-
+/***ステップバーデザイン5***/
+.step-wrap5 {
+ counter-reset: count;
+ margin: 2em 0;
+ position: relative;
+}
+.step-content5 {
+ padding: 4em 0 2em;
+ margin: 0;
+ position: relative;
+}
+.step-content5::before {
+ content: "";
+ display: block;
+ width: 55px;
+ height: 55px;
+ background: #6ab5a5;
+ border-radius: 50%;
+ position: absolute;
+ top: 0;
+ left: calc(50% - 27.5px);
+}
+.step-label5 {
+ color: #fff;
+ font-weight: bold;
+ font-size: 12px;
+ position: absolute;
+ top: 6px;
+ left: calc(50% - 15px);
+}
+.step-label5::after {
+ counter-increment: count;
+ content: counter(count);
+ position: absolute;
+ font-size: 30px;
+ top: 8px;
+ left: 7px;
+}
+.step-title5 {
+ font-weight: bold;
+ font-size: 120%;
+}
+.step-title5::first-line {
+ text-align: center;
+}
+.step-body5 {
+ margin-top: 1em;
+ padding: 0 0 1em;
+ border-bottom: dotted 2px #ddd;
+}
+/***ステップバーデザイン5***/
