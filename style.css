@@ -1,4 +1,3 @@
-<style>
    /* 両端部分に付ける背景色 */
    html{
       background-color: #f4f5f7; 
@@ -120,4 +119,3 @@
    .step-wrap3 > :last-child::before, .step-wrap3 > :last-of-type::after {
     display: none;
    }
-</style>
