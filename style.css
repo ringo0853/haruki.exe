@@ -3,12 +3,10 @@
   margin: 0 auto;
    }
    @media screen and (max-width: 1000px) {
-   .page {
-    width: 98%;
+   .page { width: 98%; }
    }
    @media screen and (max-width: 700px) {
-   .page {
-    border-color: red;
+   .page { border-color: red; }
    }
 /* 両端部分に付ける背景色 */
    html{
