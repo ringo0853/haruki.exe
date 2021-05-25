@@ -160,9 +160,3 @@
      color: #fff;
      transform: translateY(-7px);
    }
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
