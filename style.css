@@ -137,17 +137,6 @@
      box-sizing: inherit;
    }
 
-   html {
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-     font-size: 62.5%;
-   }
-
-   /* 背景用*/
-   body {
-     padding: 30px;
-     background: #78e5e5;
-   }
 
    .btn,
    a.btn,
